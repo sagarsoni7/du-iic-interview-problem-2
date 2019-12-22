@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HeaderBreadcrumb() {
+export default function HeaderBreadcrumb(props) {
   return (
     <ol className="breadcrumb">
       <li className="breadcrumb-item">
@@ -18,7 +18,9 @@ export default function HeaderBreadcrumb() {
         <a href="#">Sanjeev Singh</a>
       </li>
       <li className="breadcrumb-item active" aria-current="page">
-        <a href="#">Personal Details</a>
+  <a href="#">{props.currentActiveForm === "PersonalDetails"
+                              ? "Personal Details"
+                              : "Academic Details"}</a>
       </li>
     </ol>
   );

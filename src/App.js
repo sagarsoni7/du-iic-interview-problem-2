@@ -74,7 +74,7 @@ class App extends Component {
                   <div className="col-xl-9 col-lg-9 mb-3 mb-xl-0">
                     <div className="bg-white p-1 h-70 d-flex align-items-center justify-content-between shadow-sm">
                       <div className="flex-grow-1 d-flex align-items-center">
-                        <HeaderBreadcrumb />
+                        <HeaderBreadcrumb currentActiveForm={this.state.currentActiveForm}/>
                       </div>
                     </div>
                   </div>
@@ -364,44 +364,6 @@ class App extends Component {
                 </div>
               </section>
               <section className="py-3">
-                <div
-                  className="row bg-white shadow-sm p-3"
-                  style={{ fontSize: "0.8rem" }}
-                >
-                  <div className="col-md-6 col-lg-6 mb-3 mb-xl-0">
-                    NOTE: The information is to be provided for the bracket
-                    period starting from 1 April of the year to 31 March of the
-                    next year. (For example for the year 2013-2014, the
-                    information is to be provided from 1 April 2013 to 31 March
-                    2014)
-                  </div>
-                  <div class="col-md-3 col-lg-3 mb-3 mb-xl-0 none">
-                    <div class="well none">
-                      <div style={{ display: "inline-block" }}>
-                        <p>
-                          <i
-                            class="fa fa-check-square fa-1x m-1"
-                            style={{ color: "#3B9BFC" }}
-                          ></i>
-                          &nbsp;DELARATION: I do hereby solemnly declare that
-                          the information given above is correct.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-lg-3 mb-3 mb-xl-0 none">
-                    <div class="well none">
-                      <div style={{ display: "inline-block" }}>
-                        <p>
-                          <img src={sign} />
-                        </p>
-                        <p>Dr Sanjeev Sharma</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section className="py-3">
               <div className="row bg-white p-3">
               <h3>Dynamic Progress Bar</h3>
               </div>
@@ -446,6 +408,45 @@ class App extends Component {
                
                 <ThankYou show={this.state.sagarSoniProgress===100}/>
               </section>
+              <section className="py-3">
+                <div
+                  className="row bg-white shadow-sm p-3"
+                  style={{ fontSize: "0.8rem" }}
+                >
+                  <div className="col-md-6 col-lg-6 mb-3 mb-xl-0">
+                    NOTE: The information is to be provided for the bracket
+                    period starting from 1 April of the year to 31 March of the
+                    next year. (For example for the year 2013-2014, the
+                    information is to be provided from 1 April 2013 to 31 March
+                    2014)
+                  </div>
+                  <div class="col-md-3 col-lg-3 mb-3 mb-xl-0 none">
+                    <div class="well none">
+                      <div style={{ display: "inline-block" }}>
+                        <p>
+                          <i
+                            class="fa fa-check-square fa-1x m-1"
+                            style={{ color: "#3B9BFC" }}
+                          ></i>
+                          &nbsp;DELARATION: I do hereby solemnly declare that
+                          the information given above is correct.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-lg-3 mb-3 mb-xl-0 none">
+                    <div class="well none">
+                      <div style={{ display: "inline-block" }}>
+                        <p>
+                          <img src={sign} />
+                        </p>
+                        <p>Dr Sanjeev Sharma</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
 
               <section className="py-3">
                 <div className="row">
