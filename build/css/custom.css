@@ -1,0 +1,134 @@
+.to-right{
+    float: right;
+}
+.text-muted {
+    color: #424C8D!important;
+}
+.sublink{
+    color: #2C94FC!important;
+    background-color: #ffffff!important;
+}
+ /* Style to change separator  */
+ .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    font-weight: bolder;
+}
+
+.breadcrumb{
+    background-color: #ffffff;
+    font-weight: normal;
+    
+}
+.breadcrumb-item.active a{
+    color: #6c757d;
+    font-weight: bolder;
+}
+.breadcrumb a{
+   
+    color: #939BA2!important;
+}
+
+body{
+    color: #424C8D;
+}
+a{
+    color: #424C8D;
+}
+.headingNavigator{
+    font-size: 0.8rem;
+}
+.btn-secondary{
+    color:#424C8D!important;
+    background-color: #ffffff;
+    border-radius: 1mm;
+    border-color: #939BA2;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.text-uppercase {
+    letter-spacing: 0em;
+}
+.btn-primary{
+    color:#ffffff!important;
+    background-color: #54A8FC;
+    border-radius: 1mm;
+    border-color: #54A8FC;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.btn-primary:hover{   
+    background-color: #3B9BFC;   
+    border-color: #3B9BFC; 
+}
+.btn-secondary:hover{   
+    background-color: #F6F9FE;   
+    /* border-color: #F6F9FE;  */
+    /* color: #ffffff!important; */
+}
+.form-control{
+    width: 17%!important;
+    display: inline;
+    border-radius: 1mm;
+    font-weight: bolder;
+    color: #424C8D;
+}
+.widthIsSixty{
+    width: 60%!important;
+}
+.textInputInTable{
+    width: 100%!important;
+}
+.btn:not([class*='outline']):hover, .btn:not([class*='outline']):focus {
+    color: #424C8D!important;
+}
+.navIconHover:hover{
+    background-color: #F6F9FE;
+}
+.width80{
+    width: 80%!important;
+}
+.width50{
+    width: 50%!important;
+}
+.redText{
+    color: red;
+}
+/* The heart of the matter */
+.testimonial-group > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  .testimonial-group > .row > .col-xl-4 {
+    display: inline-block;
+    float: none;
+  }
+  
+  .scroll-tabs-btn{
+      position: relative;
+      left: 99%;
+    bottom: 72px;
+  }
+  .disable-scrollbars::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Chrome/Safari/Webkit */
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+.active-tab{
+    background-color: #6069A1!important;
+    color: #FFFFFF;
+}
+.w-99{
+    width: 99%;
+}
+.formHeader{
+    background-color: #FBFBFD;
+    font-weight: bold;
+}
+.blueText{
+    color:#6069A1;
+}
